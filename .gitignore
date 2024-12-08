@@ -1,32 +1,75 @@
-# Prerequisites
-*.d
+# Ignoring build directories
+/build/
+/bin/
+/lib/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+/# CMake
+CMakeFiles/
+CMakeCache.txt
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
 
-# Precompiled Headers
-*.gch
-*.pch
+# CPack generated files
+CPackConfig.cmake
+CPackSourceConfig.cmake
 
-# Compiled Dynamic libraries
+# CMake logs
+CMakeOutput.log
+CMakeError.log
+
+# Temporary files and folders
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Binaries
+*.exe
+*.dll
 *.so
 *.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
 *.lib
+*.a
+*.obj
+*.o
 
-# Executables
-*.exe
-*.out
-*.app
+# IDE configs
+
+## Visual Studio
+.vscode/
+.vs/
+*.sln
+*.vcxproj*
+*.user
+*.suo
+*.opensdf
+*.sdf
+*.cache
+*.ipch
+*.pdb
+
+## CLion
+.idea/
+*.iml
+
+## Qt Creator
+*.pro.user
+
+## Code::Blocks
+*.workspace
+*.cbp
+
+# Building tools
+*.ninja
+build.ninja
+compile_commands.json
+
+# Version control systems
+*.git/
+*.hg/
+*.svn/
